@@ -55,7 +55,7 @@ function setup() {
   smoothener = new Timer(80);
   smoothener.start(); // smoothener makes MouseDragged work a little better
 
-  createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(700, 700);
 
   // Grid creates the cells and runs the game
   universe = new Grid(width / 10, height / 10, width, height);
@@ -95,7 +95,6 @@ function displayInstructions() {
     }
     textSize(height / 35);
     fill(255, 255, 0, 200);
-    textAlign(CENTER, CENTER);
     text(instructions, 50, 50, width - 50, height - 50);
 }
 
