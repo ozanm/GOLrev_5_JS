@@ -167,8 +167,6 @@ class Grid {
        for(var b = 0; b < colCount; b++) { // go through columns
          if(worldTable.getNum(a, b) == 1) {
            this.nextWorld[b][a].turnOn(); // somewhere I flipped rows and columns
-         } else {
-           this.nextWorld[b][a].turnOff();
          }
        }
      }
